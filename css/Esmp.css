@@ -1,9 +1,16 @@
 
-.flex-body {
+.flex-body-c {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+.flex-body-r {
+    display: flex;
+    flex-direction: row;
+    
+}
+
 
 header {
     text-align: center;
@@ -27,6 +34,31 @@ header {
     text-decoration: none;
 }
 
+.ul.gallrey {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    
+}
+
+.ul.gallrey li p{
+    display:flex;
+    color: rgb(0, 21, 255);
+    padding: 100px;
+    margin: 10px;
+
+    
+
+    border-style: solid;
+    border-color: black;
+    background-color: #97ffd4;
+    text-decoration: none;
+}
+
 body {
     background-color: #ffffff;
 }
+
