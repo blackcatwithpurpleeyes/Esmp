@@ -2,15 +2,8 @@
 .flex-body-c {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.flex-body-r {
-    display: flex;
-    flex-direction: row;
     
 }
-
 
 header {
     text-align: center;
@@ -23,7 +16,7 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
+    
     background-color: #81a5b8;
 }
 
@@ -34,31 +27,24 @@ header {
     text-decoration: none;
 }
 
-.ul.gallrey {
+.flex-body-gallrey {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-style: solid;
+    flex-wrap:wrap;
     
-}
-
-.ul.gallrey li p{
-    display:flex;
-    color: rgb(0, 21, 255);
-    padding: 100px;
-    margin: 10px;
-
-    
-
-    border-style: solid;
-    border-color: black;
-    background-color: #97ffd4;
-    text-decoration: none;
 }
 
 body {
     background-color: #ffffff;
 }
 
+#box {
+    
+    height: 80px;
+    width: 80px;
+    padding: 50px;
+    margin: 2px;
+    background-color: aqua;
+    border-style: solid;
+}
