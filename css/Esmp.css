@@ -30,10 +30,11 @@ header {
 .flex-body-gallrey {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
     flex-wrap:wrap;
     
 }
+
 
 body {
     background-color: #ffffff;
@@ -41,8 +42,8 @@ body {
 
 .item {
     
-    height:200px;
-    width: 200px;
+    height:15%;
+    width: 15%;
     margin: 2px;
     background-color: aqua;
     border-style: solid;
@@ -51,5 +52,16 @@ body {
 .item img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
+}
+
+@media (max-width:800px) {
+    .flex-body-gallrey{
+        flex-direction: column;
+    }
+    .item {
+        height:80%;
+        width: 80%;
+        margin: 2px;
+    }
 }
