@@ -35,16 +35,18 @@ header {
 
 
 body {
-    background-color: #ffffff;
+    background-image: url( '../assets/bgi/2022-03-06_19.45.21.png' );
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-table {
-    border-collapse: collapse;
-}
-
-tr, th {
-    border: black solid 3px;
-    padding: 3px;
+div.center-page {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 50%;
+    min-height: 25%;
 }
 
 
@@ -78,3 +80,16 @@ div.gallery-item div.item-desc{
 @media (max-width:800px) {
 
 }
+
+table.fileTable {
+    margin-top: 2%;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table.fileTable.entry tr, th {
+    border: black solid 1px;
+    padding: 15px;
+}
+
+
