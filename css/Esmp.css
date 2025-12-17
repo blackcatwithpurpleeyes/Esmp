@@ -9,8 +9,7 @@ header {
 }
 
 .ul.topnav {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
     border-radius: 5px;
     list-style-type: none;
     margin: 0;
@@ -33,19 +32,35 @@ div.side-nav-bar {
     padding-right: 15px;
 }
 
+#column {
+    display: flex;
+    flex-direction: column;
+}
 
 .row {
-    
+    flex-direction: row;
     margin-left: 25px;
     margin-right: 25px;
 }
 
-body {
-    font-family: "Funnel Sans", sans-serif;
-    background-image: url( '../assets/bgi/2022-03-06_19.47.21.png' );
-    background-color: gray;
+.bg-image {
+    position: fixed;
+    background-image: url( '../assets/bgi/2025-12-16_18.41.16.png' );
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
     background-repeat: no-repeat;
     background-size:cover;
+    z-index: -1;
+    top: -1em;
+    left: -1em;
+    width: 105%;
+    height: 105%;
+}
+
+body {
+    font-family: "Funnel Sans", sans-serif;
+
+    background-color: gray;
     width: 90%;
     margin: auto;
 }
@@ -62,6 +77,9 @@ div.center-page {
     border-radius: 5px;
 }
 
+h4 {
+    text-align: center;
+}
 
 
 div.gallery {
@@ -72,7 +90,7 @@ div.gallery {
 }
 
 div.gallery-item {
-    margin: 15px;
+    
     border: gray solid 2px;
     width: 180px;
     
