@@ -46,8 +46,8 @@ div.side-nav-bar {
 .bg-image {
     position: fixed;
     background-image: url( '../assets/bgi/2025-12-16_18.41.16.png' );
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
     background-repeat: no-repeat;
     background-size:cover;
     z-index: -1;
