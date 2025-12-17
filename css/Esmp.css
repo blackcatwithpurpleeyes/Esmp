@@ -2,14 +2,6 @@
     box-sizing: border-box;
 }
 
-
-
-.flex-body-c {
-    display: flex;
-    flex-direction: column;
-    
-}
-
 header {
     text-align: center;
     
@@ -17,44 +9,63 @@ header {
 }
 
 .ul.topnav {
+    padding-left: 15px;
+    padding-right: 15px;
     border-radius: 5px;
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #cdcdcd;
+    background-color: #ffffff;
     
 }
 
 .ul.topnav li a{
     display: block;
-    
+    width: 200px;
     padding: 10px 16px;
     text-decoration: none;
+    font:funnel sans;
+}
+
+div.side-nav-bar {
+    position: relative;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
+.row {
+    
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
 body {
-    background-image: url( '../assets/bgi/2022-03-06_19.45.21.png' );
+    font-family: "Funnel Sans", sans-serif;
+    background-image: url( '../assets/bgi/2022-03-06_19.47.21.png' );
+    background-color: gray;
     background-repeat: no-repeat;
     background-size:cover;
+    width: 90%;
+    margin: auto;
 }
 
 div.center-page {
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
+
+    margin-left: 1rem;
+    margin-right: -1rem;
+    padding: 1rem;
     display:flex;
     flex-direction: row;
-    background-color: white;
-    width: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 75%;
     border-radius: 5px;
 }
 
 
 
 div.gallery {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -64,6 +75,7 @@ div.gallery-item {
     margin: 15px;
     border: gray solid 2px;
     width: 180px;
+    
 }
 
 div.gallery-item:hover{
@@ -76,6 +88,7 @@ div.gallery-item img{
 }
 
 div.gallery-item div.item-desc{
+    
     padding: 5px;
     text-align: center;
 }
@@ -85,15 +98,26 @@ div.gallery-item div.item-desc{
 }
 
 table.fileTable {
+    
+    border-radius: 5px;
     margin-top: 2%;
     margin: auto;
-    border-collapse: collapse;
     width: 50%;
 }
 
 table.fileTable.entry tr, th {
-    border: black solid 1px;
+    border: 3px rgb(235, 234, 234) solid;
+    background-color: rgb(235, 234, 234);
+    border-collapse: collapse;
+    border-radius: 5px;
     padding: 15px;
 }
 
 
+
+font.funnel-sans- fs {
+  font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
