@@ -26,6 +26,7 @@ header {
 }
 
 div.side-nav-bar {
+
     position: relative;
     float: left;
     padding-left: 15px;
@@ -36,8 +37,8 @@ div.side-nav-bar {
 
 
 #column {
-    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 .row {
@@ -78,7 +79,9 @@ div.center-page {
     background-color: rgb(255, 255, 255);
     width: 70%;
     border-radius: 5px;
-    min-height:500px
+    min-height:500px;
+    justify-content: center;
+
 }
 
 
@@ -89,6 +92,33 @@ h4 {
 img {
     border-radius: 5px;
 }
+
+
+.material-icons-round {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
 
 
 div.gallery {
@@ -140,19 +170,27 @@ div.gallery-item div.item-desc{
 
 
 table.fileTable {
+    border-collapse: collapse;
+    background-color: rgb(235, 234, 234);
     border-radius: 5px;
     margin-top: 2%;
     margin: 0;
-    width: 50%;
     height: 20px;
 }
 
 table.fileTable.entry tr, th {
-    border: 3px rgb(235, 234, 234) solid;
-    background-color: rgb(235, 234, 234);
-    border-collapse: collapse;
+    min-width: 200px;
     border-radius: 5px;
     padding: 15px;
+}
+
+table.fileTable.entry.ico {
+    min-width: none;
+}
+
+table.fileTable thead {
+    background-color: #f6a0d3;
+    border-radius: 5px;
 }
 
 
