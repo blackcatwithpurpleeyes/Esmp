@@ -99,6 +99,7 @@ div.gallery {
 }
 
 div.gallery-item {
+    
     border-radius: 5px;
     width: 300px;
     height: 300px;
@@ -114,6 +115,10 @@ div.gallery-item img{
     
 }
 
+div.gallery-item a {
+    text-decoration: none;
+}
+
 div.gallery-item div.item-desc{
     
     padding: 5px;
@@ -126,9 +131,13 @@ div.gallery-item div.item-desc{
     height: 250px;
 }
 
+
+
 @media (max-width:800px) {
 
 }
+
+
 
 table.fileTable {
     border-radius: 5px;
