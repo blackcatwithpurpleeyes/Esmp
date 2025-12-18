@@ -179,13 +179,12 @@ table.fileTable {
 }
 
 table.fileTable.entry tr, th {
-    min-width: 200px;
     border-radius: 5px;
     padding: 15px;
 }
 
-table.fileTable.entry.ico {
-    min-width: none;
+#ico {
+    min-width: 20px;
 }
 
 table.fileTable thead {
